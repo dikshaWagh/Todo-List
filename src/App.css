@@ -1,0 +1,228 @@
+/* #root {
+  max-width: 1280px;
+  margin: 0 auto;
+  text-align: center;
+}
+body{
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #405D72;
+}
+
+.ToDo{
+  width: 95%;
+  height: 500px;
+  padding: 5%;
+  background-color: #758694;
+  border-radius: 5px;
+  text-align: center;
+}
+.ToDo h1{
+
+  color: #F7E7DC;
+}
+
+.inputField input{
+  width: 80%;
+  height: 30px;
+  font-size: 20px;
+  font-weight: 400;
+  border: none;
+  margin-right: 10px;
+  outline: none;
+  background-color: #FFF8F3;
+  border-radius: 5px;
+  color: #405D72;
+}
+.inputField button{
+  background-color:#405D72 ;
+  color: #F7E7DC;
+  font-size: 18px;
+}
+.inputField button:hover {
+  background-color:#FFF8F3;
+  color: #405D72;
+}
+.lists ul{
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  list-style-type: none;
+  padding: 0;
+  background-color:#F7E7DC;
+  border-radius: 10px;
+}
+.lists div{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 5px;
+  background-color:#F7E7DC;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 24;
+}
+.lists ul li{
+  padding-left: 20px;
+  color: #405D72;
+}
+.lists button{
+  background-color: #F7E7DC;
+
+}
+.items button i{
+  color: #405D72;
+}
+.items{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 350px;
+  height: auto;
+  word-wrap: break-word;
+  flex-wrap: wrap;
+}
+button{
+  border: 1px solid #405D72;
+}
+.items .btn1{
+  white-space: nowrap;
+  max-width: fit-content;
+  height: 25px;
+  color: #FFF8F3;
+  gap: 5px;
+} 
+.itemContent{
+  display: inline-block;
+  max-width: 350px;
+  flex-grow: 1;
+} */
+ /* Root container styles */
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #405D72;
+  font-family: Arial, sans-serif;
+}
+
+.ToDo {
+  width: 90%;
+  max-width: 400px;
+  background-color: #758694;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.ToDo h1 {
+  margin-bottom: 20px;
+  color: #F7E7DC;
+  font-size: 30px;
+}
+
+.inputField {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.inputField input {
+  width: 70%;
+  padding: 10px;
+  font-size: 16px;
+  font-weight: 300;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  background-color: #FFF8F3;
+  color: #405D72;
+  margin-right: 10px;
+}
+
+.inputField button {
+  padding: 10px 15px;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  background-color: #405D72;
+  color: #F7E7DC;
+  transition: background-color 0.5s ease;
+}
+
+.inputField button:hover {
+  background-color: #FFF8F3;
+  color: #405D72;
+}
+
+.lists ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #F7E7DC;
+  padding: 10px 15px;
+  border-radius: 5px;
+  margin-bottom: 5px;
+  word-wrap: break-word;
+}
+
+.items li {
+  flex-grow: 1; /* this method allows the text to take the available space */
+  margin-right: 15px;
+  font-size: 1rem;
+  color: #405D72;
+  overflow-wrap: break-word;
+}
+
+.btn1 {
+  display: flex;
+  gap: 10px;
+}
+
+.items button {
+  padding: 8px 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #405D72;
+  color: #F7E7DC;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.items button:hover {
+  background-color: #FFF8F3;
+  color: #405D72;
+}
+
+.items button i {
+  font-size: 16px;
+}
+
+@media (max-width : 768px){
+  .ToDo{
+    width: 90%;
+    padding: 10px;
+    margin-left: 10px;
+  }
+}
